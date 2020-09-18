@@ -1,11 +1,13 @@
 package arrays;
 
+import java.util.Random;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class _01_RobotRace {
 	//1. make a main method
 public static void main(String[] args) {
-	
+	Random q = new Random();
 
 	//2. create an array of 5 robots.
  Robot[] r = new Robot[5];
@@ -20,7 +22,13 @@ public static void main(String[] args) {
 
 	//5. use another for loop to iterate through the array and make each robot move 
 	//   a random amount less than 50.
-
+while (en.hasMoreElements()) {
+	type type = (type) en.nextElement();
+	
+}
+ for (int c = 0; c <5 ; c++) {
+	r[c].move(q.nextInt(50));
+}
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 
 	//7. declare that robot the winner and throw it a party!
